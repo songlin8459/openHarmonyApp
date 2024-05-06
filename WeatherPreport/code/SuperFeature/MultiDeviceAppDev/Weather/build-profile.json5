@@ -1,0 +1,59 @@
+/*
+ * Copyright (c) 2022 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:\\Users\\Speed\\.ohos\\config\\openharmony\\auto_ohos_default_Weather_ohos.samples.weather.cer",
+          "storePassword": "0000001BCDFA0C2026FF52424176115BA60FACC6AE6B52AE42109F16254687E9C5E8B8AC4D2E451A7D40D0",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B7D8F8F97B8E6BD91DE5FC2845C5E8A846663CA4B422F6767FBFA3507AB7E24C4B9D736BC3C9871",
+          "profile": "C:\\Users\\Speed\\.ohos\\config\\openharmony\\auto_ohos_default_Weather_ohos.samples.weather.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Speed\\.ohos\\config\\openharmony\\auto_ohos_default_Weather_ohos.samples.weather.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "default",
+      "srcPath": "./product/default",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "common",
+      "srcPath": "./common"
+    }
+  ]
+}
